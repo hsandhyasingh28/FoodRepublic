@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+html {
+    height: 100vh;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+    background: linear-gradient( #fff, #fefefe, #eaeaea);
+}
+.accordion {
+    max-width: 980px;
+    background: rgba(0, 0, 0, 0.10);
+    height: 400px;
+    margin: 20px auto;
+    display:flex;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 100px;
+    background-color: red;
+    
+}
+.box {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    background-position: left;
+    background-size: cover;
+    transition: .7s;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.box:hover{
+    flex: 7;
+    height: 400px;
+}
+ .a1 {
+    background-image: url('https://img.pngio.com/soups-salads-sawadika-soups-png-1080_680.jpg');
+}
+.a2 {
+    background-image: url('https://cdn.lifehack.org/wp-content/uploads/2015/10/07005151/7.jpg');
+}
+.a3 {
+    background-image: url('https://c.ndtvimg.com/2019-11/uutrggs_chole-bhature_625x300_26_November_19.jpg');
+    color: black;
+}
+.a4 {
+    background-image: url('https://i.ndtvimg.com/i/2017-08/noodles-620x350_620x350_41502436420.jpg');
+    color:black;
+}
+.a5 {
+    background-image: url('https://static1.bigstockphoto.com/6/3/6/large1500/63696943.jpg'); 
+    color:black;
+    
+} 
+p {
+    font-weight: normal;
+    font-family: 'Exo 2', sans-serif;
+}
+.text {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    padding: 10px;
+    
+}
+.box:hover .text{
+    opacity:1;
+}
+h1 {
+    width: 250px;
+    text-align: center;
+    margin: 100px auto 20px auto;
+}
+@media screen and (max-width: 800px){
+    body{
+        margin: 0;
+    }
+    .accordion {
+        flex-direction: column;
+        height: 900px;
+        box-shadow: none;
+    }
+    .box {
+        box-shadow:none;
+    }
+    .box:hover {
+        flex: 7;
+    }
+}

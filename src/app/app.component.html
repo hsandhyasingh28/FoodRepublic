@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- <h1 class="text-center bg-success">FoodRepublic</h1> --> 
+  <nav class="nav">
+    <a class="navbar-brand" href="#"></a>
+      <img src="./assets/logo1.png"class="rounded-circle" alt="Logo" width="100px" height="65px">
+    
+      
+    
+    
+    
+    <ul class="menu">
+      <!-- <li class="menu_item"><a href="#">logo</a></li> -->
+      <li class="menu_item">
+        <a routerLink="/welcome">Welcome</a></li>
+      <li class="menu_item">
+        <a routerLink="/orderonline">Order online</a>
+      <ul class="submenu">
+         <!-- <li class="dropdown_item"><a href="orderonline/booktable">Book table</a></li>
+        <li class="_item"><a href="orderonline/orderfood">Order Food</a></li> -->
+      </ul>
+      </li>
+      <li class="menu_item">
+        <a routerLink="/menu">Menu</a></li>
+      <li class="menu_item">
+        <a routerLink="/aboutus">About us</a></li>
+      <li class="menu_item">
+        <a routerLink="/contactus">Contact us</a></li>
+         
+      <li class="right menu_item">
+        <a routerLink="/login">Login</a></li>
+      
+      
+      
+    
+      
+      
+       
+      
+</ul>
+<!-- <div >
+  <span class="right menu_item"><span class="fas fa-user-lock"></span><a href="/login">Login</a></span>
+</div> -->
+  </nav>
+  
+<router-outlet></router-outlet>
+</body>
+<div>
+  <app-footer></app-footer>
+</div>
+</html>
